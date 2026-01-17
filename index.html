@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starcraft Mini Clash</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header>
+        <h1>Starcraft Mini Clash</h1>
+        <p>
+          Select units with click or drag. Right-click to move or attack. Build new
+          marines with <strong>B</strong>. Mine the crystals to grow your army.
+        </p>
+      </header>
+      <main>
+        <canvas id="battlefield" width="960" height="540"></canvas>
+        <aside class="panel">
+          <div class="stat">
+            <span>Minerals</span>
+            <strong id="minerals">0</strong>
+          </div>
+          <div class="stat">
+            <span>Supply</span>
+            <strong id="supply">0/10</strong>
+          </div>
+          <div class="stat">
+            <span>Selected</span>
+            <strong id="selected">0</strong>
+          </div>
+          <div class="stat">
+            <span>Status</span>
+            <strong id="status">Hold</strong>
+          </div>
+          <div class="divider"></div>
+          <h2>Objectives</h2>
+          <ul>
+            <li>Mine minerals with your workers.</li>
+            <li>Build marines to push back raiders.</li>
+            <li>Defeat the enemy camp to win.</li>
+          </ul>
+        </aside>
+      </main>
+      <footer>
+        <p>Offline ready. No assets required.</p>
+      </footer>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
